@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulaire</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="cssFormulaire.css" rel="stylesheet" type="text/css"/>
+        <script src="js/libs/jquery/jquery.js" type="text/javascript"></script>
+        <script src="changeStyle.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <form name="form">
+            <fieldset class="inscription" id="formulaire">
+                <legend>Formulaire d'inscription</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <!-- ---------- Civilité ---------- -->
+                            <fieldset class="civilite" id="civilites">
+                                <legend>Civilités</legend>
+                                <table>
+                                    <tr>
+                                        <td>Nom</td>
+                                        <td><input type="text" name="nom" id="id_nom" /><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Prenom</td>
+                                        <td><input type="text" name="prenom" id="id_prenom" /><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ville</td>
+                                        <td><select name="ville" id="id_ville">
+                                                <option value="choix">Autre</option>
+                                                <option value="le_mans">Le Mans</option>
+                                                <option value="la_fleche">La Fleche</option>
+                                                <option value="sable">Sable</option> 
+                                            </select><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email</td>
+                                        <td><input type="email" name="courriel" id="courriel" /><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Site</td>
+                                        <td><input type="url" name="lienHttp" id="lienHttp" /><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sexe :</td>
+                                        <td><input type="radio" name="sexe" id="masculin" value="1"/>
+                                            <label for="masculin"> Masculin</label><br>
+                                            <input type="radio" name="sexe" id="feminin" value="2"/>
+                                            <label for="feminin"> Feminin</label><br>
+                                            <input type="radio" name="sexe" id="unknown" value="3" checked="checked"/>
+                                            <label for="unknown"> Je ne souhaite pas le dire</label><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Photo</td>
+                                        <td><input type="file" name="fichier" id="fichier" /></td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                        </td>
+
+                        <td>
+                            <!-- ---------- Savoirs ---------- -->
+                            <fieldset class="savoir" id="savoirs">
+                                <legend>Savoirs</legend>
+                                <table class="savoir">
+                                    <tr>
+                                        <td><br>Systeme d'exploitation</td>
+                                        <td><br><select name="SE" id="id_SE">
+                                                <option value="choix">Selectionnez un SE</option>
+                                                <option value="windows">Windows</option>
+                                                <option value="linux">Linux</option>
+                                                <option value="mac">Mac OS</option> 
+                                            </select></td>
+                                        <td style="text-align: center">Version<br><select name="Version" id="id_version"></select></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"><br>Langage de programmation :</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"><br><input type="checkbox" name="langage1" id="java" value="1"/>
+                                            <label for="java"> Java</label><br>
+                                            <input type="checkbox" name="langage2" id="c" value="2"/>
+                                            <label for="c"> C</label><br>
+                                            <input type="checkbox" name="langage3" id="php" value="3"/>
+                                            <label for="php"> PHP</label><br>
+                                            <input type="checkbox" name="langage4" id="autre" value="4"/>
+                                            <label for="autre"> Autre</label></td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <!-- ---------- Connexion ---------- -->
+                            <fieldset class="connexion" id="connexion">
+                                <legend>Paramètres de connexion</legend>
+                                <table>
+                                    <tr>
+                                        <td>Login</td>
+                                        <td><input type="text" name="login" id="id_login" /><br> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mot de passe</td>
+                                        <td><input type="password" name="mdp" id="id_mdp" /><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Confirmation du mot de passe</td>
+                                        <td><input type="password" name="mdp2" id="id_mdp2" /><br></td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="boutons" colspan="2">
+                            <input type="submit" name="inscription" id="id_inscription" value="inscription"/>
+                            <input type="reset" name="effacer" id="id_effacer" value="Effacer les informations de ce formulaire"/>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>

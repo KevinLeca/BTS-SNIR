@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 mars 2018, 12:59:14
+    Author     : kleca
+*/
+
+td{
+    margin-left:    2px;
+}
+
+fieldset.inscription{
+    height: 485px;
+    width: 850px;
+    background-color: #DDDDDD; 
+}
+
+fieldset.civilite{
+    height: 280px;
+    width: 500px;
+    background-color: #FAEBD7; 
+}
+
+fieldset.savoir{
+    height: 280px;
+    width: 600px;
+    background-color: #CCFFCC;
+}
+
+fieldset.connexion{
+    height: 110px;
+    width: 1140px;
+    background-color: #FFFACD;
+}
+
+td.boutons{
+    position: absolute;
+    margin-left : 400px;
+}
+
+table.savoir.td{
+    padding-left: 10px;
+}
+
+fieldset.inscription{
+    margin-left: 30px;
+}

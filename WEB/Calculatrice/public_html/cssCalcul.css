@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 mars 2018, 11:11:57
+    Author     : kleca
+*/
+
+input[type=text]{
+    background-color:   white;
+    border:             solid 1px black;
+    margin-bottom:      5px; 
+    height:             40px;
+    width:              214px;
+    border-radius:      2px;
+    border:             solid 2px #808080;
+}
+
+input[type=button]{
+    border-radius:      8px;
+    border:             solid 1px black;
+    margin:             1px;
+    width:              50px;
+    height:             50px;
+    background-color:   white;
+}
+
+input[type=submit]{
+    border-radius:      8px;
+    border:             solid 1px black;
+    margin:             1px;
+    width:              50px;
+    height:             50px;
+    background-color:   white;
+}
+
+fieldset{
+    background-color: #D3D3D3;
+    border:           solid 1px black;
+    width:            150px;
+    border-radius:      5px;
+}
