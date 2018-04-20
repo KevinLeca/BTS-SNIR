@@ -9,13 +9,25 @@ and open the template in the editor.
         <title>Recherche Departement</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="cssFrance.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div>
             <form action="php/gestionville.php" method="post">
-                <label for="ville">Donnez un nom de ville</label>
-                <input type="text" name="ville" id="ville"/> <br/>
-                <input type="submit"/>
+                <fieldset class="france">
+                    <legend> Rechercher en France</legend>
+                    <table>
+                        <tr>
+                            <td><label for="ville">Donnez un nom de ville</label></td>
+                            <td><input type="text" name="ville" id="ville"/> <br/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="numero">Donnez un numero de departement</label></td>
+                            <td><input type="text" name="numero" id="numero"/> <br/></td>
+                        </tr>
+                    </table><br/>
+                    <input type="submit"/>
+                </fieldset>
             </form>
         </div>
     </body>
