@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 avr. 2018, 09:34:39
+    Author     : kleca
+*/
+
+table, td {
+    border: 5px ridge white;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.departement{
+    width: 400px;
+    background-color: #CCFFCC;
+}
+
+.titre{
+    background-color: #CCFFCC;
+}
+
+.objet{
+    background-color: #FFFACD;
+}
